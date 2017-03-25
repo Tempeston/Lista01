@@ -17,14 +17,19 @@ public class Exercicio02 {
 		System.out.println("Informe o valor do terceiro lado: ");
 		l3 = leitor.nextInt();
 		
-		if ((l1 == l2) && (l2 == l3));
-		System.out.println("O triangulo é Equilatero");
-		if ((l1 == l2) && (l2 != l3));
-		System.out.println("O triangulo é Isóceles");
-		if ((l1 != l2) && (l2 != l3));
-		System.out.println("O triangul é Escaleno");
-		
-
-	}
-
+		if (l1 == l2 && l2 == l3)
+			System.out.println("\nO triangulo é Equilatero");
+        else
+        {
+            if (l1 == l2 || l1 == l3 || l2 == l3)
+            	System.out.println("\nO triangulo é Isoceles");
+            else
+            {
+                if (l1!=l2 || l1!=l3 || l3!=l2)
+                    System.out.println("\nO triangulo é Escaleno");
+            }
+        }
+        
+    }
 }
+
